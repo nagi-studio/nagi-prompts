@@ -9,10 +9,7 @@ language:
   - zh-CN
 status: published
 prompt_file: prompt.zh-CN.md
-reference:
-  website: https://blog.nagi.fun/
-  source_public: false
+preview: ../../assets/sao-blog-theme/desktop-vr-overview.webp
 license: CC-BY-4.0
 assets_license: reference-only
 created: 2026-07-12
-

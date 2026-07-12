@@ -1,28 +1,19 @@
-# References and rights boundary
+# Provenance and rights boundary
 
-## Public references
+## Screenshot
 
-- Homepage: https://blog.nagi.fun/
-- Quest archive: https://blog.nagi.fun/blog?lang=en
+- File: `assets/sao-blog-theme/desktop-vr-overview.webp`
+- Captured: 2026-07-12
+- View: public-facing desktop VR layout
+- Owner: NAGI STUDIO
 
 ## Source project
 
 The source project is private. Its repository URL, source files, internal paths, deployment configuration, and implementation code are intentionally excluded from this public prompt package.
 
-The Prompt describes observable design behavior and reusable design-system decisions. It is not a source-code release.
+The Prompt is a manually written description of design behavior and reusable design-system decisions. It is not a source-code release and does not require access to the original project.
 
 ## Screenshots
-
-Recommended public screenshot set:
-
-| File | View |
-| --- | --- |
-| `desktop-light-home.webp` | Desktop homepage, light theme |
-| `desktop-dark-home.webp` | Desktop homepage, dark theme |
-| `mobile-light-home.webp` | Mobile homepage and menu button |
-| `desktop-quest-list.webp` | Quest archive and tag filter |
-| `desktop-article.webp` | Article window and reading rail |
-| `mobile-article.webp` | Mobile article reading layout |
 
 Screenshots should only be added after checking that they contain no private account information, analytics, admin UI, visitor data, or unpublished content.
 
@@ -31,4 +22,3 @@ Screenshots are provided only to document the visual result. They are not automa
 ## Third-party identity
 
 “Sword Art Online” and related names, characters, artwork, and visual assets belong to their respective rights holders. This repository is not affiliated with or endorsed by those rights holders. Reusers should replace third-party assets with original or properly licensed alternatives.
-

@@ -15,14 +15,14 @@ body:
     id: goal
     attributes:
       label: Goal and result
-      description: What does the prompt create, and is there a public result?
+      description: What does the prompt create, and what result did it produce?
     validations:
       required: true
   - type: textarea
     id: prompt
     attributes:
       label: Prompt
-      description: Include the complete reusable prompt or link to your proposed files.
+      description: Paste the complete, self-contained prompt or point to the proposed files in your pull request.
     validations:
       required: true
   - type: checkboxes

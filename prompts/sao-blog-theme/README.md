@@ -12,15 +12,15 @@
 - 亮色、暗色、响应式和 reduced-motion
 - 可选的 3D / VR 环形窗口模式
 
-## Reference result
+## Example result
 
-- Public site: https://blog.nagi.fun/
-- Quest archive: https://blog.nagi.fun/blog?lang=en
-- Source code: private and intentionally not included
+![SAO blog theme shown in its desktop VR layout](../../assets/sao-blog-theme/desktop-vr-overview.webp)
+
+这张截图只用于展示 Prompt 所描述的视觉结果。案例不包含原项目源码、仓库地址或实现文件。
 
 ## Use
 
-将 [`prompt.zh-CN.md`](prompt.zh-CN.md) 完整交给代码生成 Agent。若目标项目已经存在，最好同时让 Agent 读取该项目的真实组件、数据结构和技术栈；Prompt 要求保留功能，只重建表现层。
+[`prompt.zh-CN.md`](prompt.zh-CN.md) 是一份自包含的实现规格。布局、色彩、组件、动效、响应式和验收要求都直接写在 Prompt 中，不要求额外参考页面。
 
 建议分两轮执行：
 
@@ -29,5 +29,4 @@
 
 ## Scope boundary
 
-本案例公开的是设计意图和实现 Prompt，不公开原博客源码。SAO 名称、角色、字体与界面素材可能涉及第三方权利；用于独立项目时应替换为自有品牌和有权使用的素材。
-
+本案例公开的是作者写出的设计意图和实现 Prompt，不公开原博客源码。SAO 名称、角色、字体与界面素材可能涉及第三方权利；用于独立项目时应替换为自有品牌和有权使用的素材。
