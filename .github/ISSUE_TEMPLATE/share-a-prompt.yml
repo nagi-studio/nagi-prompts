@@ -1,0 +1,38 @@
+name: Share a prompt
+description: Propose a complete prompt case for the gallery
+title: "[Prompt] "
+labels:
+  - prompt
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Prompt title
+      placeholder: A short, descriptive title
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal and result
+      description: What does the prompt create, and is there a public result?
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt
+      description: Include the complete reusable prompt or link to your proposed files.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights and privacy
+      options:
+        - label: I have the right to publish this prompt under CC BY 4.0.
+          required: true
+        - label: I have removed private source code, credentials, personal data, and confidential links.
+          required: true
+        - label: I have documented third-party assets and screenshot rights.
+          required: true

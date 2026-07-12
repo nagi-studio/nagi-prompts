@@ -1,0 +1,18 @@
+id: sao-blog-theme
+title: SAO personal blog theme
+summary: A full-site implementation prompt for an SAO-style personal blog and digital garden.
+category:
+  - web-design
+  - frontend
+  - personal-blog
+language:
+  - zh-CN
+status: published
+prompt_file: prompt.zh-CN.md
+reference:
+  website: https://blog.nagi.fun/
+  source_public: false
+license: CC-BY-4.0
+assets_license: reference-only
+created: 2026-07-12
+
