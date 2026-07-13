@@ -4,7 +4,7 @@
 
 这里公开 NAGI STUDIO 项目背后的想法和完整 Prompt，但不公开对应项目的源代码。
 
-每个项目只保留两样东西：一张展示实际效果的图片，以及一份可以独立阅读的完整 Prompt。新增项目时，继续在这个 README 底部追加新的章节。
+每个项目保留三样东西：一张展示实际效果的图片、一份可以独立阅读的完整 Prompt，以及一段说明"它是怎么被造出来的"的技术栈 / 开发方法。新增项目时，继续在这个 README 底部追加新的章节。
 
 ## Projects
 
@@ -68,7 +68,7 @@
 
 ## 二、技术与组件
 
-沿用目标项目已有技术栈。如果从零实现，使用 SvelteKit、Svelte 5、TypeScript 和 SCSS/CSS Variables；使用 GSAP 负责编排型动画；Three.js 或 Threlte 只用于可选的 VR/3D 环形窗口模式。
+沿用目标项目已有技术栈。**框架不限**——React、Vue、Svelte 等任一现代组件框架都能实现这套主题，本 Prompt 不绑定任何一个。参考实现用 SvelteKit + Svelte 5 + TypeScript + SCSS/CSS Variables，但那只是一种选择，不是要求。无论用哪个框架，都需要配齐三样能力：一个编排型动画方案（如 GSAP）、一个按需加载的 3D 方案（Three.js / Threlte 等，仅用于可选 VR/3D 环形窗口）、以及 CSS 变量驱动的主题 token。
 
 至少建立这些组件：
 
@@ -270,16 +270,14 @@ VR View 只能作为渐进增强。将 Menu、Stats、Message 和 Content 变成
 
 低性能设备、爬虫、无 WebGL 或 reduced-motion 环境自动使用平面布局。
 
-## 十五、无障碍与性能
+## 十五、无障碍与交互状态
 
-- 导航使用真实链接，按钮支持键盘和 Escape
-- active page、focus ring、loading、empty、error 状态明确
-- 图片使用正确 alt、响应式尺寸、lazy loading 和 async decoding
+（性能与可抓取性相关的硬约束见十一、十二，此处不重复。）
+
+- 导航使用真实链接，按钮支持键盘操作和 Escape 关闭
+- active page、focus ring、loading、empty、error 状态都要明确可见
 - 使用 main、aside、nav、article、section 等语义元素
-- 不让 SSR、爬虫或无 JavaScript 页面中的卡片保持隐藏
-- 移动端避免 backdrop-filter 和大面积 blur 动画
-- 动画只优先操作 transform、opacity 和 clip-path
-- 不允许明显 CLS 和页面级横向滚动
+- 每个可交互元素有清晰的 hover / active / focus 反馈，不靠颜色单一维度传达状态
 
 ## 十六、禁止偏离
 
@@ -314,6 +312,14 @@ VR View 只能作为渐进增强。将 Menu、Stats、Message 和 Content 变成
 
 开始编码前先审计现有项目，列出准备复用的组件、数据和功能。实现后运行类型检查、构建和响应式验证，并逐项对照上述要求。不要在完成一张首页截图后停止。
 ```
+
+### 技术栈
+
+- 开发工具：Claude Code（Opus 4.6–4.8 / Fable 5）、Codex（GPT 5.5 / 5.6 Sol）、Antigravity（Gemini 3 Pro）
+- 前端框架：不限（React / Vue / Svelte 均可）
+- 参考实现：SvelteKit + Svelte 5 + TypeScript + SCSS
+- 动画：GSAP
+- 3D：Three.js / Threlte（仅可选 VR 模式）
 
 ### Rights
 
